@@ -31,10 +31,13 @@ public class Prac {
     }
 
     public static void main(String[] args) {
-        int gam = countFruit("감");
-        int subak = countFruit("수박");
-        System.out.println(gam);
-        System.out.println(subak);
+        String title = "웹개발의 봄, Spring";
+        String tutor = "남병관";
+        int days = 35;
+        Course course = new Course(title, tutor, days);
+        System.out.println(course.title);
+        System.out.println(course.tutor);
+
     }
 
 }
