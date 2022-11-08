@@ -1,4 +1,4 @@
-package com.sparta.web_spring.prac;
+package com.sparta.webSpring.prac;
 
 public class Tutor {
     private String name;

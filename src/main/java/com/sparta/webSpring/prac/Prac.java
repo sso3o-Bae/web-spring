@@ -1,4 +1,4 @@
-package com.sparta.web_spring.prac;
+package com.sparta.webSpring.prac;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.sparta.web_spring.controller;
+package com.sparta.webSpring.controller;
 
-import com.sparta.web_spring.prac.Course;
+import com.sparta.webSpring.prac.Course;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

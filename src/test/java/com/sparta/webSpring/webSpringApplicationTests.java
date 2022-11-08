@@ -1,10 +1,10 @@
-package com.sparta.web_spring;
+package com.sparta.webSpring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Week01ApplicationTests {
+class webSpringApplicationTests {
 
     @Test
     void contextLoads() {
