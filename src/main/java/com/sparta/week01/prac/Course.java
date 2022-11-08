@@ -6,6 +6,30 @@ public class Course {
     public String tutor;
     public int days;
 
+    public String getTitle() {
+        return this.title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTutor() {
+        return this.tutor;
+    }
+
+    public void setTutor(String tutor) {
+        this.tutor = tutor;
+    }
+
+    public int getDays() {
+        return this.days;
+    }
+
+    public void setDays(int days) {
+        this.days = days;
+    }
+
     //기본 생성자
     public Course(){
 
