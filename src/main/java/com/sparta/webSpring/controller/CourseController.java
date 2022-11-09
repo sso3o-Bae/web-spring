@@ -1,18 +1,21 @@
 package com.sparta.webSpring.controller;
 
-import com.sparta.webSpring.prac.Course;
+import com.sparta.webSpring.domain.Course;
+import com.sparta.webSpring.domain.CourseRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
+@RequiredArgsConstructor
 @RestController
 public class CourseController {
 
-    @GetMapping("/courses")
-    public Course getCourses() {
-        Course course = new Course();
-        course.setTitle("웹개발의 봄 스프링");
-        course.setDays(35);
-        course.setTutor("남병관");
-        return course;
+    private final CourseRepository courseRepository;
+
+    @GetMapping("/api/courses")
+    public List<Course> getCourses() {
+        return courseRepository.findAll();
     }
 }
