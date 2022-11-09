@@ -12,13 +12,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.List;
 
-@EnableJpaAuditing //생성일자, 수정일자 반영됨
+@EnableJpaAuditing
 @SpringBootApplication
 public class webSpringApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(webSpringApplication.class, args);
     }
+
     @Bean
     public CommandLineRunner demo(CourseRepository courseRepository, CourseService courseService) {
         return (args) -> {
@@ -42,8 +43,6 @@ public class webSpringApplication {
                 System.out.println(course.getTitle());
                 System.out.println(course.getTutor());
             }
-
-            courseRepository.deleteAll();
         };
     }
 }
