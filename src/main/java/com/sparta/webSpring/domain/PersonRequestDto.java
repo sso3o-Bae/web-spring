@@ -7,7 +7,8 @@ import lombok.Setter;
 @Setter
 @Getter
 @RequiredArgsConstructor
-public class CourseRequestDto {
-    private final String title;
-    private final String tutor;
+public class PersonRequestDto {
+    private String name;
+    private int age;
+    private String address;
 }
