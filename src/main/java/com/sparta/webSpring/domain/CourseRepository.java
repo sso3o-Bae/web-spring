@@ -1,4 +1,4 @@
-package com.sparta.web_spring.domain;
+package com.sparta.webSpring.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
