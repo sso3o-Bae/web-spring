@@ -4,7 +4,6 @@ import com.sparta.webSpring.domain.CourseRepository;
 import com.sparta.webSpring.domain.Person;
 import com.sparta.webSpring.domain.PersonRepository;
 import com.sparta.webSpring.domain.PersonRequestDto;
-import com.sparta.webSpring.service.CourseService;
 import com.sparta.webSpring.service.PersonService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

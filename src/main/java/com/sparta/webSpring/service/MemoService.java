@@ -1,8 +1,8 @@
 package com.sparta.webSpring.service;
 
-import com.sparta.webSpring.domain.Memo;
-import com.sparta.webSpring.domain.MemoRepository;
-import com.sparta.webSpring.domain.MemoRequestDto;
+import com.sparta.webSpring.models.Memo;
+import com.sparta.webSpring.models.MemoRepository;
+import com.sparta.webSpring.models.MemoRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
