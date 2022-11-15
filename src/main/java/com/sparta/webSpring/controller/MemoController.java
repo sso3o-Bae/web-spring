@@ -17,26 +17,26 @@ public class MemoController {
     private final MemoRepository memoRepository;
     private final MemoService memoService;
 
-    @PostMapping("/api/memos")
+    @PostMapping("/api/memos") //생성
     public Memo createMemo(@RequestBody MemoRequestDto requestDto) {
         Memo memo = new Memo(requestDto);
         return memoRepository.save(memo);
     }
 
-    @GetMapping("/api/memos")
+    @GetMapping("/api/memos") //조회
     public List<Memo> getMemos() {
         LocalDateTime now = LocalDateTime.now();
         LocalDateTime yesterday = LocalDateTime.now().minusDays(1);
         return memoRepository.findAllByModifiedAtBetweenOrderByModifiedAtDesc(yesterday, now);
     }
 
-    @DeleteMapping("/api/memos/{id}")
+    @DeleteMapping("/api/memos/{id}") //삭제
     public Long deleteMemo(@PathVariable Long id) {
         memoRepository.deleteById(id);
         return id;
     }
 
-    @PutMapping("/api/memos/{id}")
+    @PutMapping("/api/memos/{id}") //수정
     public Long updateMemo(@PathVariable Long id, @RequestBody MemoRequestDto requestDto){
         return memoService.update(id, requestDto);
     }
