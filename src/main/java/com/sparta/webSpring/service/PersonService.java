@@ -1,6 +1,5 @@
 package com.sparta.webSpring.service;
 
-import com.sparta.webSpring.domain.CourseRepository;
 import com.sparta.webSpring.domain.Person;
 import com.sparta.webSpring.domain.PersonRepository;
 import com.sparta.webSpring.domain.PersonRequestDto;
