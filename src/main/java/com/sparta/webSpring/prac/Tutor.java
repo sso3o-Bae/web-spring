@@ -1,6 +1,6 @@
 package com.sparta.webSpring.prac;
 
-public class Tutor {
+public class Tutor { //1주차
     private String name;
     private String bio;
 
