@@ -31,7 +31,7 @@ public class ProductRestController {
         return product;
     }
 
-    @PutMapping("api/products/{id}")
+    @PutMapping("api/products/{id}") //숙제
     public Long updateProduct(@PathVariable Long id, @RequestBody ProductMypriceRequestDto requestDto){
         return productService.update(id, requestDto);
     }
